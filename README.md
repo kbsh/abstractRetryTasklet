@@ -1,0 +1,2 @@
+# java-retry-tasklet
+exceptionをキャッチするとリトライする。
