@@ -1,26 +1,15 @@
 package xxx;
 
-import java.util.ArrayList;
-import java.util.List;
-import jp.dspharma.dch.batch.config.JobExecutionListener;
-import jp.dspharma.dch.batch.step.tasklet.nankodo.CmsAuthTasklet;
-import jp.dspharma.dch.batch.step.tasklet.nankodo.CmsCheckDeliveryStatusTasklet;
-import jp.dspharma.dch.batch.step.tasklet.nankodo.CmsCreateDirectoryTasklet;
-import jp.dspharma.dch.batch.step.tasklet.nankodo.CmsDeliveryContentsRequestTasklet;
-import jp.dspharma.dch.batch.step.tasklet.nankodo.CmsGetVersionTasklet;
-import jp.dspharma.dch.batch.step.tasklet.nankodo.CmsWebScrapingDetailPageTasklet;
-import jp.dspharma.dch.batch.support.exception.StepRetryException;
-import jp.dspharma.dch.batch.support.orgenum.CmsEnvironments;
+import xxx.ExtendTasklet;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.JobBuilderFactory;
 import org.springframework.batch.core.configuration.annotation.StepBuilderFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.client.RestClientException;
-import org.springframework.web.client.RestTemplate;
 
 @Configuration
+@EnableBatchProcessing
 public class AnyConfig {
 
   /** バッチID. */
